@@ -95,31 +95,35 @@ footer {
   z-index: 9999;
 }
 
+/* ============================= */
+/* SCROLL BOTTOM CHAT POPUP */
+/* ============================= */
+
 #chat-popup {
   position: fixed;
-  bottom: 90px;
-  right: 20px;
-  width: 300px;
+  left: 50%;
+  bottom: -400px;
+  transform: translateX(-50%);
+  width: 320px;
   background: #111;
   padding: 15px;
-  border-radius: 12px;
-  display: none;
+  border-radius: 12px 12px 0 0;
   color: white;
+  box-shadow: 0 -10px 30px rgba(0,0,0,0.9);
+  transition: bottom 0.4s ease;
+  z-index: 9999;
 }
 
-#chat-popup.active { display: block; }
-
-#chat-popup input,
-#chat-popup textarea {
-  width: 100%;
-  margin-bottom: 8px;
-  padding: 8px;
+#chat-popup.active {
+  bottom: 0;
 }
 
-.send-btn {
-  width: 100%;
-  padding: 10px;
+.chat-header {
+  text-align: center;
+  font-weight: bold;
   background: #00f5ff;
-  border: none;
-  cursor: pointer;
+  color: black;
+  padding: 8px;
+  border-radius: 10px 10px 0 0;
+  margin: -15px -15px 10px -15px;
 }
