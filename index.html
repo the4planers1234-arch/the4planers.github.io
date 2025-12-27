@@ -88,6 +88,29 @@
   <footer>
     <p>© 2025 The 4 Planers. All Rights Reserved.</p>
   </footer>
+ <div id="chat-btn">💬</div>
 
+  <!-- Chat Popup -->
+  <div id="chat-popup">
+    <div class="chat-header">
+      <span>Welcome 👋</span>
+      <button id="close-chat">×</button>
+    </div>
+
+    <div class="chat-body">
+      <p class="welcome-text">Let’s build something amazing 🚀</p>
+
+      <form id="contact-form" action="https://formspree.io/f/mzdbzoza" method="POST">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" rows="3" placeholder="Your Message" required></textarea>
+        <button type="submit" class="send-btn">Send Message</button>
+      </form>
+
+      <p id="success-msg">✅ Message sent successfully!</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
